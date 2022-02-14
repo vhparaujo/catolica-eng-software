@@ -12,3 +12,4 @@ int main(){
         printf("Você é maior de idade.");
     }
 }
+
