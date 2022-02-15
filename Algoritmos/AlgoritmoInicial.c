@@ -4,12 +4,13 @@ int main(){
     int idade;
     printf("Digite sua idade: ");
     scanf("%d",&idade);
-    printf("Sua idade é: %d", idade);
+    printf("Sua idade é: %d", idade, "\n");
 
     if(idade < 18){
-        printf("Você é menor de idade.");
+        printf("\nVocê é menor de idade.");
     } else {
-        printf("Você é maior de idade.");
+        printf("\nVocê é maior de idade.");
     }
-}
 
+    printf("\n"); //pular última linha
+}
