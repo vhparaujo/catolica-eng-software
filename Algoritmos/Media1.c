@@ -12,5 +12,8 @@ int main () {
     media = ((a*3.5) + (b*7.5)) / 11;
 
     printf("Sua média é: %.5lf", media);
+       
+    printf("\n"); //pular última linha
+
 
 }

@@ -16,4 +16,6 @@ int main () {
 
     printf("Sua média é: %.1lf", media);
 
+    printf("\n"); //pular última linha
+
 }

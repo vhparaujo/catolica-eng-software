@@ -13,4 +13,5 @@ int main() {
  	prod = a*b;
 
  	printf("PROD = %d", prod);
+    printf("\n"); //pular última linha
  }
