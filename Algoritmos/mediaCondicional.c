@@ -27,4 +27,4 @@ int main() { // início
 
     printf("\n"); // pular última linha
         
-} // fi
+} // fim
