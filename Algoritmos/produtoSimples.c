@@ -14,4 +14,5 @@ int main() { // início
 
  	printf("PROD = %d", prod); // saída do produto
     printf("\n"); //pular última linha
- }
+
+ } // fim

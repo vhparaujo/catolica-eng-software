@@ -14,4 +14,4 @@ int main() { // inicio
 
 	printf("Diferença: %d", diferenca); // saída do cálculo
 
-} // fim
+} // fim 

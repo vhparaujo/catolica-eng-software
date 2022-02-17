@@ -20,4 +20,4 @@ int main() { // inicio
     printf("%.2lf + %.2lf = %.2lf\n", a, b, multiplicacao); // saída dos resultados
     printf("%.2lf + %.2lf = %.2lf\n", a, b, divisao); // saída dos resultados
 
-} // fim
+} // fim 

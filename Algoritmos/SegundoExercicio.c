@@ -15,4 +15,4 @@ int main() { // inicio
     printf("X = %d\n", &x); // saída endereço de memória do tipo inteiro
     printf("X = %x\n", &x); // saída endereço de memória em hexadecimal
 
-} // fim
+} // fim 
