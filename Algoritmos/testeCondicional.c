@@ -14,6 +14,6 @@ int main() { // início
         printf("Valores aceitos"); // saída se verdadeiro
         else printf("Valores não aceitos"); // saída se falso
 
-    printf("\n"); //pular última linha
+    printf("\n"); // pular última linha
         
 } // fim
