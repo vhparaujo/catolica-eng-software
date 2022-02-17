@@ -1,16 +1,19 @@
-#include <stdio.h> //biblioteca
+#include <stdio.h> // biblioteca para funcionar scanf e printf
 
-int main(){
-    int idade;
-    printf("Digite sua idade: ");
-    scanf("%d",&idade);
-    printf("Sua idade é: %d", idade, "\n");
+int main() { // inicio 
 
-    if(idade < 18){
-        printf("\nVocê é menor de idade.");
+    int idade; // declaração variável idade
+    
+    printf("Digite sua idade: "); // saída para informar usuário
+    scanf("%d",&idade); // entrada de dados
+    printf("Sua idade é: %d", idade, "\n"); // saída para informar usuário
+
+    if(idade < 18){ // condicional
+        printf("\nVocê é menor de idade."); // saída para informar usuário
     } else {
-        printf("\nVocê é maior de idade.");
+        printf("\nVocê é maior de idade."); // saída para informar usuário
     }
 
-    printf("\n"); //pular última linha
-}
+    printf("\n"); // pular última linha
+
+} // fim
