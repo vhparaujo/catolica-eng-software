@@ -2,7 +2,7 @@
 #include <locale.h> // biblioteca para uso da acentuacao dentro do printf.
 #include <math.h> // biblioteca matematica
 
-int main() { // in�cio
+int main() { // inicio
 
 	setlocale(LC_ALL, "Portuguese"); // habilita a acentuacao para o portugues e esta ligada a biblioteca <locale.h>
 	
