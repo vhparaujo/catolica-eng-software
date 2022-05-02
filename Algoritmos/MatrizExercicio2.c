@@ -1,19 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main(){
+int main() {
 
-int x, v = -1, vetor[v], tam;
+int x = 0, v = 15, vetor[v];
 
 printf("Escreva quantos elementos voce deseja: ");
 scanf("%d",&v);
+fflush(stdin); 
 
-/*for(x = 1; x <= 10; x++){
-    printf("Digite idade %d: ", x);
-    scanf("%d", &vetor[x]);*/
-tam = sizeof(vetor[v]);
-
-printf("%d\n", tam);
-
-
+for(x = 0; x < v; x++) {
+	printf("Preencha o vetor: ");
+    scanf("%d", &vetor[x]);
+    fflush(stdin);
+    
 }
+
+for(x = 0; x < v; x++){
+	printf("%d", vetor[x]);
+	printf("\n");
+	
+}
+    
+return 0;
+
+} 
