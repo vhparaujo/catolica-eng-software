@@ -1,3 +1,6 @@
+/*Elabore um programa que forneça os valores distintos de um vetor inteiro informado pelo usuário.
+Verifique com este usuário qual deveria ser a quantidade de elementos para este vetor.*/
+
 #include <stdio.h>
 
 int main() {

@@ -1,3 +1,7 @@
+/*Elabore um programa que armazene a idade de até 10 pessoas, apresente a média de todas as idades
+informadas, quantas idades são maiores que 18 anos e a posição do vetor onde as idades maiores de 18 anos
+ocorrem*/
+
 #include <stdio.h>
 
 int main(){

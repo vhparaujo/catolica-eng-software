@@ -1,3 +1,7 @@
+/* Elabore um programa que armazene quatro notas de um aluno variando de 0 a 10 sem desprezar as casas
+decimais, calcule a média e em seguida exiba o resultado “Aprovado”, “Reprovado” ou “Em recuperação”.
+Regras: Aprovado=7.0, Reprovado<=3.0 e em recuperação >3 e <7. */
+
 #include <stdio.h>
 
 int main(){
