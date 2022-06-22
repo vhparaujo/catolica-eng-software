@@ -5,7 +5,7 @@ int main() {
 	
 	char l1, l2;
 	
-	printf("Insita um caractere: ");
+	printf("Insira um caractere: ");
 	scanf("%c", &l1);
 	fflush(stdin);
 	printf("Insira outro caractere: ");
