@@ -1,3 +1,5 @@
+package exercicios;
+
 import java.util.NoSuchElementException;
 import java.util.Objects;
 import java.util.Scanner;
