@@ -31,7 +31,6 @@ public class TestePessoa {
 		
 		Pessoa p = new Pessoa();
 			p.calculaIdade(data);
-		
 			System.out.println(p);
 	}
 }
