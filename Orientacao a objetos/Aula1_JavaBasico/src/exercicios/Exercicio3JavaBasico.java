@@ -29,8 +29,8 @@ public class Exercicio3JavaBasico {
 				sexo = scan.nextLine();
 			}
 
-			Boolean sexoF = Objects.equals(sexo, "f");
-			Boolean sexoM = Objects.equals(sexo, "m");
+			boolean sexoF = Objects.equals(sexo, "f");
+			boolean sexoM = Objects.equals(sexo, "m");
 
 			if (!sexoF && !sexoM) {
 				System.out.println("sexo nao encontrado");
@@ -44,10 +44,10 @@ public class Exercicio3JavaBasico {
 			System.out.println("a - azuis; v - verdes; c - castanho; p - pretos");
 			corDosOlhos = scan.nextLine();
 
-			Boolean a = Objects.equals(corDosOlhos, "a");
-			Boolean v = Objects.equals(corDosOlhos, "v");
-			Boolean c = Objects.equals(corDosOlhos, "c");
-			Boolean p = Objects.equals(corDosOlhos, "p");
+			boolean a = Objects.equals(corDosOlhos, "a");
+			boolean v = Objects.equals(corDosOlhos, "v");
+			boolean c = Objects.equals(corDosOlhos, "c");
+			boolean p = Objects.equals(corDosOlhos, "p");
 
 			if (!a && !v && !c && !p) {
 				System.out.println("cor dos olhos invalida");
@@ -61,9 +61,9 @@ public class Exercicio3JavaBasico {
 			System.out.println("(l (loiros), c (castanhos), p (pretos), r (ruivos))");
 			corDosCabelos = scan.nextLine();
 
-			Boolean l = Objects.equals(corDosCabelos, "l");
-			Boolean r = Objects.equals(corDosCabelos, "r");
-			Boolean cc = Objects.equals(corDosCabelos, "c");
+			boolean l = Objects.equals(corDosCabelos, "l");
+			boolean r = Objects.equals(corDosCabelos, "r");
+			boolean cc = Objects.equals(corDosCabelos, "c");
 			p = Objects.equals(corDosCabelos, "p");
 
 			if (!l && !r && !cc && !p) {

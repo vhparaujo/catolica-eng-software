@@ -1,4 +1,6 @@
-package exercicios;
+package exercicios.Testes;
+
+import exercicios.*;
 
 public class TesteFatura {
 

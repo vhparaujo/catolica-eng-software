@@ -1,4 +1,7 @@
-package exercicios;
+package exercicios.Testes;
+
+import exercicios.*;
+
 
 import java.util.Calendar;
 import java.util.Locale;
