@@ -1,3 +1,10 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body
 {
     box-sizing: border-box;
@@ -18,4 +25,28 @@ body
 .btn:hover
 {
     background: green;
+}
+
+/* Exemplo usando classe */
+.classeFormatacao
+{
+    color: darkcyan;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Exemplo utilizando ID */
+#idFormatacao
+{
+    color: darkcyan;
+    font-size: 40px;
+}
+
+/* Exemplo usando tag */
+h5
+{
+    color: red;
+    font-size: 30px;
 }
