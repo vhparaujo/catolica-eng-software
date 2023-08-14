@@ -1,15 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[]) {
+int main(int argc, char* argv[]) {
 
     for (int i = 1; i < argc; i++) {
         int n = atoi(argv[i]);
         int resultado = 0;
 
         if (n == 0 || n == 1) {
-            printf("O numero %d nao eh primo\n", n);
-            continue;
+            printf("0");
+            break;
+        }
+
+        if(n < 0) {
+            printf("Numero negativo nao permitido");
+            break;
         }
 
         for (int j = 2; j <= n / 2; j++) {
@@ -20,9 +25,9 @@ int main(int argc, char *argv[]) {
         }
 
         if (resultado == 0) {
-            printf("O numero %d eh primo\n", n);
+            printf("1");
         } else {
-            printf("O numero %d nao eh primo\n", n);
+            printf("0");
         }
     }
 
