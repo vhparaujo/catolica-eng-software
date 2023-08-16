@@ -5,11 +5,12 @@
 // Saída: 27 
 
 #include <stdio.h>
+#define TAMANHO 4
 
-int soma_array(int* vetor, int tamanho) {
+int soma_array(int vetor[TAMANHO]) {
     int soma = 0;
 
-    for(int i = 0; i < tamanho; i++){
+    for(int i = 0; i < TAMANHO; i++){
         soma += vetor[i];
     }
 
@@ -18,9 +19,8 @@ int soma_array(int* vetor, int tamanho) {
 
 int main() {
     int array[] = {5, 7, 9, 6};
-    int tamanho = sizeof(array)/sizeof(int);
 
-    printf("%d", soma_array(array, tamanho));
+    printf("%d", soma_array(array));
 
     return 0;
 }
