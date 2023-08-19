@@ -55,7 +55,9 @@ let subtracao = num - num2;
 let divisao = num / num2;
 let multiplicacao = num * num2;
 
-console.log(`O resultado da soma do numero ${num} com o numero ${num2} eh = ${soma}`);
-console.log(`O resultado da subtracao do numero ${num} com o numero ${num2} eh = ${subtracao}`);
-console.log(`O resultado da divisao do numero ${num} com o numero ${num2} eh = ${divisao}`);
-console.log(`O resultado da multiplicacao do numero ${num} com o numero ${num2} eh = ${multiplicacao}`);
+let calculos = [soma, subtracao, divisao, multiplicacao];
+let nomesCalculos = ["soma", "subtracao", "divisao", "multiplicacao"];
+
+for(i=0; i < 4; i++){
+    console.log(`O resultado da ${nomesCalculos[i]} do numero ${num} com o numero ${num2} eh = ${calculos[i]}`);
+}
