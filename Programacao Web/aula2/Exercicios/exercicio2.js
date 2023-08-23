@@ -14,9 +14,10 @@ function multiplicacaoMatrizes(matrizA, matrizB) {
     for (let i = 0; i < linhasA; i++) {
       matrizMultiplicada[i] = Array(colunasB);
       for (let j = 0; j < colunasB; j++) {
-        matrizMultiplicada[i][j] = 0;
+        const posicoes = [];
         for (let k = 0; k < colunasA; k++) {
-          matrizMultiplicada[i][j] += matrizA[i][k] * matrizB[k][j];
+        posicoes.push(`${matrizA[i][k]} * ${matrizB[k][j]}`);
+        matrizMultiplicada[i][j] = posicoes.join(" + ");
         }
       }
     }
@@ -45,4 +46,3 @@ function multiplicacaoMatrizes(matrizA, matrizB) {
   
   console.log("Resultado da multiplicação:");
   console.table(resultado);
-  
