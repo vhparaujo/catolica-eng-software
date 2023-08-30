@@ -78,8 +78,8 @@ int main(int argc, char* argv[]) {
     mediaX = somaX / tamanho;
     mediaY = somaY / tamanho;
 
-    //printf("%d\n", mediaX);
-    //printf("%.1f", mediaY);
+    // printf("%d\n", mediaX);
+    // printf("%.1f", mediaY);
 
     for(int i = 1; i < tamanho; i++) {
         somatorio1 = (pontos[i].x - mediaX) * (pontos[i].y - mediaY);
@@ -90,7 +90,7 @@ int main(int argc, char* argv[]) {
     }
 
     inclinacao = somatorio1 / somatorio2;
-    //printf("%.1f\n", inclinacao);
+    printf("%.1f\n", inclinacao);
 
     intercepcao = mediaY - inclinacao * mediaX;
 
@@ -98,5 +98,7 @@ int main(int argc, char* argv[]) {
 
     free(pontos);  // Libera a memória alocada
     return 0;
+
+    // feof serve para ler um arquivo ate o seu fim
 
 }
