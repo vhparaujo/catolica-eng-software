@@ -90,7 +90,7 @@ int main(int argc, char* argv[]) {
     }
 
     inclinacao = somatorio1 / somatorio2;
-    printf("%.1f\n", inclinacao);
+    //printf("%.1f\n", inclinacao);
 
     intercepcao = mediaY - inclinacao * mediaX;
 
