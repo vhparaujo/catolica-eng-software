@@ -13,5 +13,5 @@ function fatorial(n) {
     }
 }
 
-let numero = 5;
-console.log(fatorial(numero));
+let numero = 6;
+console.log(`Fatorial de ${numero}! = ${fatorial(numero)}`);
