@@ -68,6 +68,7 @@ objeto.forEach((pessoa) => {
     console.log(`Nascimento: ${pessoa.data.toLocaleDateString("pt-BR")}`);
 })
 
+// teste do prompt 
 const prompt = require(`prompt-sync`)();
 let digite = prompt("Digite algo: ");
 console.log(digite);
