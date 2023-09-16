@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     int n = argc - 1;
     int array_inteiros[n];
 
-    for (int i = 0; i <= n; i++)
+    for (int i = 1; i < argc; i++)
     {
         array_inteiros[i - 1] = atoi(argv[i]);
     }
