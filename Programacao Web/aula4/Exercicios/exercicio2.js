@@ -6,30 +6,39 @@
 
 const prompt = require('prompt-sync')();
 
-function Aluno(notas) {
+function Aluno(nome, notas) {
     this.notas = notas.map(parseFloat);
+    this.nome = nome;
 
     this.calculaMedia = function() {
         const somatorio = this.notas.reduce((total, nota) => total + nota);
         const media = somatorio / this.notas.length;
         return media;
     };
+
+    this.informarNome = function() {
+        return this.nome;
+    }
    
 }
 
-function printarResultado(callback){
+function printarResultado(callback, callback2){
     const aprovacao = callback();
+    const nome = callback2();
     if(aprovacao >= 7 && aprovacao <= 10){
-        console.log("Aprovado");
+        console.log(`${nome}, sua média foi ${aprovacao}: Aprovado`);
     } else {
-        console.log("Reprovado");
+        console.log(`${nome}, sua média foi ${aprovacao}: Reprovado`);
     }
 }
 
 const input = prompt("Escreva suas notas separadas por vírgula: ");
 const inputNotas = input.split(',');
 
-const aluno1 = new Aluno(inputNotas);
-const mediaAluno1 = aluno1.calculaMedia();
+const inputName = prompt("Escreva seu nome: ");
 
-printarResultado(() => mediaAluno1);
+const aluno1 = new Aluno(inputName, inputNotas);
+const mediaAluno1 = aluno1.calculaMedia();
+const nomeAluno1 = aluno1.informarNome();
+
+printarResultado(() => mediaAluno1,() => nomeAluno1);
