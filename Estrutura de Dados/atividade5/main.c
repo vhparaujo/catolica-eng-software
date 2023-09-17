@@ -22,6 +22,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "bubble_sort.h"
+#include <ctype.h>
 
 #define MAX_PALAVRAS 100
 #define TAM_PALAVRA 80
@@ -53,6 +54,11 @@ int main(int argc, char *argv[]) {
 
     // Ler as palavras do arquivo
     while (num_palavras < MAX_PALAVRAS && fscanf(txtFile, "%s", palavras[num_palavras]) != EOF) {
+        
+        for (int i = 0; palavras[num_palavras][i]; i++) {
+            palavras[num_palavras][i] = tolower(palavras[num_palavras][i]);
+        }
+        
         num_palavras++;
     }
     
