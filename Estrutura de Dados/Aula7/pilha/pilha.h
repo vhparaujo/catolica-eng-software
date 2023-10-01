@@ -11,4 +11,4 @@ typedef struct Pilha {
 
 Pilha* pilha();
 void empilhar(Objeto* o, Pilha* p);
-Objeto desempilhar(Pilha* p);
+Objeto* desempilhar(Pilha* p);
