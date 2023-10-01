@@ -1,14 +1,21 @@
-typedef struct Objeto{
-    char valor;
-    struct Objeto* objeto_anterior;
-}Objeto;
+#define MAX_PEDIDOS 100
 
-typedef struct Fila {
-    Objeto* inicio;
-    Objeto* final;
-    int quantidade_objeto;
-}Fila;
+struct Pedido {
+    int numero_pedido;
+    char nome_cliente[50];
+    char nome_medicamento[50];
+    int quantidade;
+};
 
-Fila* fila();
-void enfileirar(Objeto* o, Fila* f);
-Objeto* desenfileirar(Fila* f);
+struct FilaPedidos {
+    struct Pedido pedidos[MAX_PEDIDOS];
+    int inicio;
+    int fim;
+};
+
+void inicializarFila(struct FilaPedidos* fila);
+int filaVazia(struct FilaPedidos* fila);
+int filaCheia(struct FilaPedidos* fila);
+void enfileirar(struct FilaPedidos* fila, struct Pedido pedido);
+struct Pedido desenfileirar(struct FilaPedidos* fila);
+void listarPedidos(struct FilaPedidos* fila);
