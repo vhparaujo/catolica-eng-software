@@ -1,5 +1,5 @@
 typedef struct {
-    int numero[100];
+    int numero[100]; // array usado para armazenar os elementos da pilha
     int topo;
 } Pilha;
 
