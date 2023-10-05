@@ -12,7 +12,15 @@
 
 <body class="bg-secondary">
 
+    {{#erro_form}}
+        <div class="alert alert-danger mt-3" role="alert">
+            Nenhum campo pode ser vazio!
+        </div>
+    {{/erro_form}}
+
+    {{^erro_form}}
     <table class="table container-md mt-5">
+        
         <thead>
             <tr>
                 <th scope="col">Nome</th>
@@ -23,14 +31,16 @@
         </thead>
         <tbody>
             <tr>
-                <td>{{name}}</td>
-                <td>{{address}}</td>
-                <td>{{telefone}}</td>
-                <td>{{date}}</td>
+                <td>{{agendamento.name}}</td>
+                <td>{{agendamento.address}}</td>
+                <td>{{agendamento.telefone}}</td>
+                <td>{{agendamento.date}}</td>
             </tr>
         </tbody>
+        
     </table>
-
+    {{/erro_form}}
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
