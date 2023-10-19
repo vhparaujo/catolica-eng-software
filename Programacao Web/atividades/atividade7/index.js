@@ -48,21 +48,37 @@ app.post('/dados', (req, res) => {
 
     let erro_form = [];
 
-    Object.entries(dadosPaciente).forEach(info => {
-        if(info[1] == "") {
-            const fieldWithError = fieldsName[info[0]]
-            console.log('dados do paciente', fieldWithError)
-            erro_form.push(fieldWithError)
-        }
-    });
+    // Object.entries(dadosPaciente).forEach(info => {
+    //     if(info[1] == "") {
+    //         const fieldWithError = fieldsName[info[0]]
+    //         console.log('dados do paciente', fieldWithError)
+    //         erro_form.push(fieldWithError)
+    //     }
+    // });
 
-    Object.entries(dadosConsulta).forEach(info => {
-        if(info[1] == "") {
-            const fieldWithError = fieldsName[info[0]]
-            console.log('dados da consulta', fieldWithError)
-            erro_form.push(fieldWithError)
+    for (const atributo in dadosPaciente) {
+        const valor = dadosPaciente[atributo];
+        if (valor == "") {
+            const field = fieldsName[atributo];
+            erro_form.push({ nome_atributo: field });
         }
-    });
+    }
+
+    // Object.entries(dadosConsulta).forEach(info => {
+    //     if(info[1] == "") {
+    //         const fieldWithError = fieldsName[info[0]]
+    //         console.log('dados da consulta', fieldWithError)
+    //         erro_form.push(fieldWithError)
+    //     }
+    // });
+
+    for (const atributo in dadosConsulta) {
+        const valor = dadosConsulta[atributo];
+        if (valor == "") {
+            const field = fieldsName[atributo];
+            erro_form.push({ nome_atributo: field });
+        }
+    }
 
     console.log(erro_form);
 
