@@ -1,0 +1,44 @@
+{
+  "quotes": [
+    {
+      "author": "Albert Einstein",
+      "quote": "A vida é como andar de bicicleta. Para manter o equilíbrio, você deve continuar se movendo.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/900px-Albert_Einstein_Head.jpg"
+    },
+    {
+      "author": "Mahatma Gandhi",
+      "quote": "Seja a mudança que você deseja ver no mundo.",
+      "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcThy2ZlSftFPrlNpFh2r4PDft1ldLJepH3Yj3G-vLUkVzG0ODXA_ZdkDI6NgBFEVia6CF_8XJRB0FLIz5Q"
+    },
+    {
+      "author": "Nelson Mandela",
+      "quote": "A maior glória em viver não está em nunca cair, mas em se levantar toda vez que caímos.",
+      "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTXM-dBS8rBHChsez_EYDM2vUiqih4yvnZgjMUQyug-aDPjFkKXuS0iqRNTbHNhz1073gHGxGsZUaf-QB8"
+    },
+    {
+      "author": "Winston Churchill",
+      "quote": "O sucesso não é final, o fracasso não é fatal: é a coragem de continuar que conta.",
+      "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRXw5OYWwDG4JzDJUgiq3zFsrNh59Jt67fZBuUl1l3Koe0N8uBA0K9C6im_MpCmAPLf7s4K1PwFiHg488E"
+    },
+    {
+      "author": "Martin Luther King Jr.",
+      "quote": "A injustiça em qualquer lugar é uma ameaça à justiça em todo lugar.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Martin_Luther_King%2C_Jr..jpg"
+    },
+    {
+      "author": "Madre Teresa",
+      "quote": "Espalhe amor por onde você for. Que ninguém venha a você sem sair mais feliz.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Mother_Teresa_1.jpg/250px-Mother_Teresa_1.jpg"
+    },
+    {
+      "author": "Steve Jobs",
+      "quote": "Seu tempo é limitado, então não o desperdice vivendo a vida de outra pessoa.",
+      "image": "https://m.media-amazon.com/images/I/81wbmWlRNEL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "author": "Aristóteles",
+      "quote": "Nós somos o que fazemos repetidamente. A excelência, então, não é um ato, mas um hábito.",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_Q-Ue0MWJ_KK-7UtPBP_uCJAkubeIk_F4Xd9auMBiQNo0nG5x"
+    }
+  ]
+}
