@@ -29,6 +29,8 @@ int vencedorPrimeiraMao = 0;
 
 int empate = 0;
 
+Carta jogarTurno(Jogador *jogador, int jogadorNum);
+
 int hierarquiaDeCartas(int valor, char naipe) {
     if (valor == 4 && naipe == 'P') return 14; // Zap
     if (valor == 7 && naipe == 'C') return 13; // 7 de Copas
@@ -122,6 +124,11 @@ void aumentarRodada(int jogadorNum) {
             aumentoAtual++;
             valorRodada = aumento[aumentoAtual];
             printf("Jogador %d aceitou! A rodada agora vale %d pontos.\n", jogadorNum == 1 ? 2 : 1, valorRodada);
+            
+            printf("Jogador %d deve jogar uma carta primeiro!\n", jogadorNum);
+            mostrarMao(jogadorNum == 1 ? &jogador1 : &jogador2);
+            jogarTurno(jogadorNum == 1 ? &jogador1 : &jogador2, jogadorNum);
+
         } else {
             printf("Jogador %d recusou! Jogador %d ganha %d pontos.\n", jogadorNum == 1 ? 2 : 1, jogadorNum, valorRodada);
             if (jogadorNum == 1) jogador1.pontos += valorRodada;
@@ -209,6 +216,11 @@ Carta jogarTurno(Jogador *jogador, int jogadorNum) {
     } else if (opcao == 2) {
         aumentarRodada(jogadorNum);
     } else if (opcao == 3) {
+        if (jogadorNum == 1) {
+            jogador2.pontos += valorRodada;
+        } else {
+            jogador1.pontos += valorRodada;
+        }
         printf("Jogador %d desistiu da rodada!\n", jogadorNum);
     }
 
@@ -224,11 +236,11 @@ int main() {
     distribuirCartas();
     
     printf("Jogo de Truco\n");
-    printf("Pontuacao Jogador 1: %d \n", jogador1.pontos);
-    printf("Pontuacao Jogador 2: %d\n", jogador2.pontos);
-    
+
     while (jogador1.pontos < 12 && jogador2.pontos < 12) {
         printf("\nRodada %d - Mao %d\n", rodada, maoAtual);
+        printf("Pontuacao Jogador 1: %d \n", jogador1.pontos);
+        printf("Pontuacao Jogador 2: %d\n", jogador2.pontos);
     
         printf("Mao do Jogador 1:\n");
         mostrarMao(&jogador1);
